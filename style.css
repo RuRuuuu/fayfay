@@ -1,0 +1,52 @@
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+   div{
+              margin-left: auto;
+              margin-right: auto;
+              width:370px;
+              height:420px;
+              border: 0px solid black;
+              border-radius: 9px;
+              margin-top: 50px;
+              text-align: center;
+      
+          }
+          div:hover{
+              box-shadow: 5px 5px 15px 2px rgb(0 0 0 );
+        
+            
+          }
+          
+          input{
+              width:270px;
+              height:35px;
+              margin-top: 15px;
+              border-radius: 5px;  
+              border: 0px solid white;  
+          }
+          input:hover{
+              box-shadow: 0 3px 10px 3px rgb(0 0 0 );
+          }
+              
+          button{
+              margin-left: 210px;
+              width:100px;
+              height:36px;
+              border-radius: 7px;
+              background-color: black;
+              color:white;
+          }
+          h2{
+              padding-top: 50px;
+          }
+          button:hover{
+              background-color: green;
+            border-color:green;
+          }
+           placeholder{
+             margin-left: 20px;
+           }
