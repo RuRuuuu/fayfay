@@ -1,27 +1,6 @@
 
-const putt = document.getElementById('name');
-
-function list() {
-  const textInput = putt.value;
-  console.log(textInput);
-  if (textInput.length > 7) {
-    alert("character must not be more than 7");
-  }
-  else if (textInput.length < 7) {
-    alert("characters must be up to 7");
-  }
-  else {
-    alert("you are good to do");
-  }
-}
-    document.querySelector("button").addEventListener("click", list);
-
-
-
-
-
 var colorChanger = document.querySelector("#sudo");
-var colors = ["yellow", "skyblue", "pink", "brown", "black", "aqua", "orange", "red", "green"];
+  var colors = [ "white", "yellow", "skyblue", "pink", "brown", "black", "aqua", "orange", "red", "green"];
 var counter = 0;
 
 function changeColor() {
@@ -31,3 +10,37 @@ function changeColor() {
 }
 
 setInterval(changeColor, 1000);
+
+
+
+const btn = document.querySelector("button");
+const fill = document.querySelector("#div2");
+const put = document.querySelectorAll("input")[0];
+const toons = document.querySelector("#toon");
+ 
+console.log(put);
+console.log(fill);
+console.log(btn);
+
+ btn.addEventListener("click", function(){
+  if (put.value === "") {
+    fill.style.display = "block";
+    
+  } else {
+    toons.style.display = "block";
+  };
+
+  
+  setTimeout(function(){
+    fill.style.display = "none"
+}, 2000)
+
+setTimeout(function(){
+      toons.style.display = "none"
+}, 4000)
+
+ })
+
+
+
+ 
